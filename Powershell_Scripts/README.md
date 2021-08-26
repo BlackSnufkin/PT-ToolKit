@@ -18,7 +18,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Get-NetSessionEnum.ps1**|This script automates the enumeration of NetSessionEnum (network sessions of connected users in the domain)| [Source](https://github.com/YossiSassi/Get-NetSessionEnum)
 |**Get-NetworkShareInfo.ps1**|This cmdlet is used to discover information associated with a network share such as the physical location of the network share, its creation date, and name| [Source](https://github.com/tobor88/PowerShell-Red-Team)
 |**Get-UserLogon.ps1**|retrieve logged on users on remote machine | [Source](https://github.com/Bravecold/FCampOps/tree/master/WindowsServer)
-|**Get-Wifi.ps1 **|retrieve all wifi passwords| Mine =)
+|**Get-Wifi.ps1**|retrieve all wifi passwords| Mine =)
 |**impa-SecretDump.ps1**|impacket secretdump in binary format embeded into powershell script| Mine =)
 |** **| | [Source]()
 |** **| | [Source]()
