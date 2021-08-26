@@ -22,7 +22,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**impa-SecretDump.ps1**|impacket secretdump in binary format embeded into powershell script| Mine =)
 |**Inital_v0.1.ps1**|Automate some local and domain enumeration and generate html report| Mine =)
 |**Invoke-adPEAS.ps1**| Automate Active Directory enumeration| [Source](https://github.com/61106960/adPEAS)
-|** **| | [Source]()
+|**Invoke-AzureAdPasswordSprayAttack.ps1**|Perform a password spray attack against Azure AD | [Source]()
 |** **| | [Source]()
 |** **| | [Source]()
 
