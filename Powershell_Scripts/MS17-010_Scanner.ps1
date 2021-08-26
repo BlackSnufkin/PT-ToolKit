@@ -1,4 +1,4 @@
-function MS17-010_scan{
+function MS17-010_Scanner{
 
     param(
         [String]
