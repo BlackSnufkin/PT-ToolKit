@@ -5,9 +5,10 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 
 
 | Script| Description | Source |
-| --------------- | --------------- | --------------- | 
+| --------------- | --------------- | --------------- |
 | **ADModuleImport.ps1** |  Import Powershell Active directory Module on any machine  | [Source](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/PowershellScripts/ADModuleImport.ps1) | 
 | **AMSIbypass.ps1** | AMSI Bypass to run malicious tools| [Source](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell) |
+|**Add-RemoteRegBackdoor.ps1**|Implements a new remote registry backdoor that allows for the remote retrieval ofa system's machine account hash | [Source](https://github.com/HarmJ0y/DAMP)
 | **BlueKeepScan.ps1** | Scan if the target computer is vulnerable to the BlueKeep exploit (CVE-2019-0708)| [Source_WAS*](https://github.com/vletoux/pingcastle)
 | **Dump_Lsass_v1-2.ps1** | Dump lsass process | Mine =) |
 | **Find-LOLBAS.ps1** | Enumerating living off the land binaries and scripts on a system |[Source](https://github.com/NotoriousRebel/Find-LOLBAS)
@@ -42,8 +43,9 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**PowerLsassSilentProcessExit.ps1**|PowerShell script to dump lsass.exe process memory to disk for credentials extraction via silent process exit mechanism | [Source](https://github.com/CompassSecurity/PowerLsassSilentProcessExit) 
 |**ProxyTunnel.ps1**|Creates a TCP Tunnel through the default system proxy. As such, it automatically handles proxy authentication if ever required. | [Source](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts) 
 |**QuickMacro.ps1**|Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method | [Source](https://github.com/enigma0x3/Generate-Macro) 
-|** **| | [Source]() 
-|** **| | [Source]() 
-|** **| | [Source]() 
-|** **| | [Source]() 
-|** **| | [Source]() 
+|**RemoteHashRetrieval.ps1**|Abuses the ACL backdoor set by Add-RemoteRegBackdoor to remotely retrieve the local SAM account hashes for the specified machine | [Source](https://github.com/HarmJ0y/DAMP) 
+|**RevShell.ps1 / RevShell-2.ps1**|Reverse Shell in powerhsell Cahnge IP and port | Mine =) 
+|**Run-SecurePS.ps1**|Open PowerShell Console without AMSI| [Source](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts) 
+|**ShadowDump.ps1**|PoC for CVE-2021-36934, Dumps the hives from the system's Volume Shadow Copies (This is a modified version) | [Source](https://github.com/WiredPulse/Invoke-HiveNightmare) 
+|**Start-Webserver.ps1**|Starts powershell webserver| [Source](https://github.com/MScholtes/WebServer) 
+
