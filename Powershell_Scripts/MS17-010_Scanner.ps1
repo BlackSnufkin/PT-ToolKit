@@ -1,4 +1,10 @@
-﻿$Source = @"
+function MS17-010_scan{
+
+    param(
+        [String]
+        $target
+    )
+$Source = @"
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -221,4 +227,5 @@ namespace PingCastle.Scanners
 "@
 Add-Type -TypeDefinition $Source
 
-[PingCastle.Scanners.ms17_010scanner]::ScanForMs17_010("192.168.1.120")
+[PingCastle.Scanners.ms17_010scanner]::ScanForMs17_010("$target")
+}
