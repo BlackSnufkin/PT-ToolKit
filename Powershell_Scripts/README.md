@@ -14,7 +14,15 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 | **Find-PotentiallyCrackableAccounts.ps1** | Retreive information about user accounts associated with SPN | [Source](https://github.com/cyberark/RiskySPN)
 | **Get-AzureDomainInfo.ps1** | PowerShell functions for enumerating information from AzureAD domains | [Source](https://github.com/NetSPI/MicroBurst)
 | **Get-ClearTextPassword.ps1** |obtain clear text passwords from cached locations as well as the from the Windows Registry|[Source](https://github.com/tobor88/PowerShell-Red-Team) 
-
-
+|**Get-LdapInfo.ps1**|Perform LDAP Queries of the current domain| [Source](https://github.com/tobor88/PowerShell-Red-Team)
+|**Get-NetSessionEnum.ps1**|This script automates the enumeration of NetSessionEnum (network sessions of connected users in the domain)| [Source](https://github.com/YossiSassi/Get-NetSessionEnum)
+|**Get-NetworkShareInfo.ps1**|This cmdlet is used to discover information associated with a network share such as the physical location of the network share, its creation date, and name| [Source](https://github.com/tobor88/PowerShell-Red-Team)
+|** **| | [Source]()
+|** **| | [Source]()
+|** **| | [Source]()
+|** **| | [Source]()
+|** **| | [Source]()
+|** **| | [Source]()
+|** **| | [Source]()
 
 
