@@ -20,6 +20,7 @@
     .NOTES  
         Modified_By    : @BlackSnufkin
 	Created        : 26 Aug 21
+	Modified_Name  : ShadowDump.ps1
 	
 	File Name      : Invoke-HiveNightmare.ps1
         Version        : v.0.2
