@@ -13,6 +13,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 | **Find-LOLBAS.ps1** | Enumerating living off the land binaries and scripts on a system |[Source](https://github.com/NotoriousRebel/Find-LOLBAS)
 | **Find-PotentiallyCrackableAccounts.ps1** | Retreive information about user accounts associated with SPN | [Source](https://github.com/cyberark/RiskySPN)
 | **Get-AzureDomainInfo.ps1** | PowerShell functions for enumerating information from AzureAD domains | [Source](https://github.com/NetSPI/MicroBurst)
+| **Get-ClearTextPassword.ps1** |obtain clear text passwords from cached locations as well as the from the Windows Registry|[Source](https://github.com/tobor88/PowerShell-Red-Team) 
 
 
 
