@@ -8,7 +8,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 | --------------- | --------------- | --------------- | 
 | **ADModuleImport.ps1** |  Import Powershell Active directory Module on any machine  | [Source](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/PowershellScripts/ADModuleImport.ps1) | 
 | **AMSIbypass.ps1** | AMSI Bypass to run malicious tools| [Source](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell) |
-| **BlueKeepScan.ps1** | Scan for Bluekeep vulnerability| [Source_WAS*](https://github.com/vletoux/pingcastle)
+| **BlueKeepScan.ps1** | Scan if the target computer is vulnerable to the BlueKeep exploit (CVE-2019-0708)| [Source_WAS*](https://github.com/vletoux/pingcastle)
 | **Dump_Lsass_v1-2.ps1** | Dump lsass process | Mine =) |
 | **Find-LOLBAS.ps1** | Enumerating living off the land binaries and scripts on a system |[Source](https://github.com/NotoriousRebel/Find-LOLBAS)
 | **Find-PotentiallyCrackableAccounts.ps1** | Retreive information about user accounts associated with SPN | [Source](https://github.com/cyberark/RiskySPN)
@@ -36,10 +36,10 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Invoke-SysPSexec.ps1**|Open CMD as system with psexec| [Source]()
 |**Invoke-WmiCommand.ps1**|Executes a PowerShell ScriptBlock on a target computer using WMI as a pure C2 channel. | [Source](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts)
 |**Invoke-Zerologon.ps1**|Scan if the target computer is vulnerable to the ZeroLogon exploit (CVE-2020-1472) | [Source](https://github.com/BC-SECURITY/Invoke-ZeroLogon)
-|** **| | [Source]() 
-|** **| | [Source]() 
-|** **| | [Source]() 
-|** **| | [Source]() 
+|**MASK.ps1**|Download a script and encrypt it with given key and then write it to drive | Source Unkonw 
+|**MS17-010_Scanner.ps1**|Scan if the target computer is vulnerable to the EthernalBlue exploit (MS17-010) | [Source_WAS*](https://github.com/vletoux/pingcastle) 
+|**NTLMExtract.ps1**|Extract all local NTLM user password hashes from the registry handling latest AES-128-CBC with IV obfuscation techniques | [Source](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts) 
+|**PowerLsassSilentProcessExit.ps1**|PowerShell script to dump lsass.exe process memory to disk for credentials extraction via silent process exit mechanism | [Source](https://github.com/CompassSecurity/PowerLsassSilentProcessExit) 
 |** **| | [Source]() 
 |** **| | [Source]() 
 |** **| | [Source]() 
