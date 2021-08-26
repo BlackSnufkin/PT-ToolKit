@@ -47,5 +47,6 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**RevShell.ps1 / RevShell-2.ps1**|Reverse Shell in powerhsell Cahnge IP and port | Mine =) 
 |**Run-SecurePS.ps1**|Open PowerShell Console without AMSI| [Source](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts) 
 |**ShadowDump.ps1**|PoC for CVE-2021-36934, Dumps the hives from the system's Volume Shadow Copies (This is a modified version) | [Source](https://github.com/WiredPulse/Invoke-HiveNightmare) 
-|**Start-Webserver.ps1**|Starts powershell webserver| [Source](https://github.com/MScholtes/WebServer) 
+|**Start-Webserver.ps1**|Starts powershell webserver| [Source](https://github.com/MScholtes/WebServer)
+|**Test-AzureADUserExistence.ps1**|Check if an account exists in Azure AD for specified email addresses | [Source](https://blog.it-koehler.com/en/Archive/3320)
 
