@@ -8,12 +8,12 @@
         Used to supply the path to dump the Registry hives. If the parameter isn't used, the path will be default to the user's desktop.
 
     .EXAMPLE
-        PS C:\> .\Invoke-HiveNightmare.ps1 -path "c:\"
+        PS C:\> .\ShadowDump.ps1 -path "c:\"
         
         Dumps the hives from the system's Volume Shadow Copies to C:\.
         
     .EXAMPLE
-        PS C:\> .\Invoke-HiveNightmare.ps1 
+        PS C:\> .\ShadowDump.ps1 
 
         Dumps the hives from the system's Volume Shadow Copies to C:\users\[USERNAME]\desktop.
 
