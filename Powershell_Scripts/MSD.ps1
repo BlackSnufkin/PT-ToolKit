@@ -67,4 +67,4 @@ Write-Host -ForegroundColor White "[*] " -NoNewline;Write-Host -ForegroundColor 
 Write-Host -ForegroundColor White "`n[+] " -NoNewline;Write-Host -ForegroundColor Green "New MSD file saved to:"
 Get-Item $sorted_file
 Remove-Item $outfile
-Write-Host -ForegroundColor White "[!] " -NoNewline;Write-Host -ForegroundColor Red ("Total Time took {0}" -f $tt.Elapsed);
+Write-Host -ForegroundColor White "`n[!] " -NoNewline;Write-Host -ForegroundColor Red ("Total Time took {0}" -f $tt.Elapsed);
