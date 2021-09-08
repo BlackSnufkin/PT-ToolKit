@@ -11,6 +11,6 @@ Exploits Scripts and other tools that are useful during Penetration-Testing or R
 - **before running them durin PT first try them in Virtual Envirment** 
 
 ## Windows Binary
-- Tools that I founded on github most of them are written in C #
+- Tools that I founded on github most of them are written in C#
 - All the tools are compiled
 - **before running them durin PT first try them in Virtual Envirment**
