@@ -11,6 +11,7 @@ Some tools i found on gituhb and compiled them
 |SharpMapExec|A sharpen version of [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec). This tool is made to simplify penetration testing of networks and to create a swiss army knife that is made for running on Windows which is often a requirement during insider threat simulation engagements.|[cube0x0](https://github.com/cube0x0/SharpMapExec)
 |SysInternals_Selected | Some selected tools form Sysinternals Suite that i found used over and over agian| [microsoft](https://docs.microsoft.com/en-us/sysinternals/downloads/)
 |CQDumpHashV2 |Dump SAM Hashes |[BlackDiverX](https://github.com/BlackDiverX/cqtools)
+|LsassSilentProcessExit |New method of causing WerFault.exe to dump lsass.exe process memory to disk for credentials extraction via silent process exit mechanism without crasing lsass.|[deepinstinct](https://github.com/deepinstinct/LsassSilentProcessExit)
 |PingCastle |Ping Castle is a tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework. It does not aim at a perfect evaluation but rather as an efficiency compromise.|[vletoux](https://github.com/vletoux/pingcastle)
 |PowerShdll |Run PowerShell with rundll32. Bypass software restrictions.|[p3nt4](https://github.com/p3nt4/PowerShdll)
 |SharpRDPHijack |Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|[bohops](https://github.com/bohops/SharpRDPHijack)
