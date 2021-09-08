@@ -20,5 +20,5 @@ Exploits Scripts and other tools that are useful during Penetration-Testing or R
 - **before running them durin PT first try them in Virtual Envirment**
 --------
 ## TODO
-- [ ] Add More Exploits, Scripts and Tools
+- [ ] Add More Exploits, Scripts and Tools and test them on my Virtual Lab
 - [ ] Create Timeline for Exploits, Scripts and Tools Updates
