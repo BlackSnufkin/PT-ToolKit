@@ -1,5 +1,6 @@
 # PT-ToolKit
 Exploits Scripts and other tools that are useful during Penetration-Testing or Red Team engagement
+Most of the Tools and Script are aimed to Active-Directory environment and windows platfform 
 
 ---
 ## Exploits:
