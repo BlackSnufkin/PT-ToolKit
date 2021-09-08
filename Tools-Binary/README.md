@@ -14,7 +14,7 @@ most of theme are for windows but i'll add tools for linux too
 |**SysInternals_Selected** | Some selected tools form Sysinternals Suite that i found used over and over agian| [microsoft](https://docs.microsoft.com/en-us/sysinternals/downloads/)
 |**CQDumpHashV2** |Dump SAM Hashes |[BlackDiverX](https://github.com/BlackDiverX/cqtools)
 |**LsassSilentProcessExit** |New method of causing WerFault.exe to dump lsass.exe process memory to disk for credentials extraction via silent process exit mechanism without crasing lsass.|[deepinstinct](https://github.com/deepinstinct/LsassSilentProcessExit)
-|MagnusKatz| Research project for understanding how Mimikatz work and being better at C | [magnusstubman](https://github.com/magnusstubman/MagnusKatz)
+|**MagnusKatz**| Research project for understanding how Mimikatz work and being better at C | [magnusstubman](https://github.com/magnusstubman/MagnusKatz)
 |**PingCastle** |Ping Castle is a tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework. It does not aim at a perfect evaluation but rather as an efficiency compromise.|[vletoux](https://github.com/vletoux/pingcastle)
 |**PowerShdll** |Run PowerShell with rundll32. Bypass software restrictions.|[p3nt4](https://github.com/p3nt4/PowerShdll)
 |**SharpRDPHijack** |Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|[bohops](https://github.com/bohops/SharpRDPHijack)
