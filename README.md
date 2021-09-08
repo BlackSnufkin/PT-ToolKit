@@ -13,8 +13,9 @@ Exploits Scripts and other tools that are useful during Penetration-Testing or R
 - Scripts source and discreption ןn the appropriate folder
 - **before running them durin PT first try them in Virtual Envirment** 
 ---
-## Windows Binary
+## Tools-Binary
 - Tools that I found on github most of them are written in C#
+- Most of to the tools are for windows but i'll add tools for linux too
 - All the tools are compiled
 - Tools source and discreption the appropriate folder
 - **before running them durin PT first try them in Virtual Envirment**
