@@ -1,5 +1,6 @@
-# Windows Binary 
-Some tools i found on gituhb and compiled them
+# Tools-Binary 
+Some tools i found on gituhb and compiled them 
+most of theme are for windows but i'll add tools for linux too
 
 | Tool Name| Description | Source |
 | --------------- | --------------- | --------------- |
