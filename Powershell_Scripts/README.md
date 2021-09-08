@@ -48,5 +48,6 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Run-SecurePS.ps1**|Open PowerShell Console without AMSI| [S3cur3Th1sSh1te](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts) 
 |**ShadowDump.ps1**|PoC for CVE-2021-36934, Dumps the hives from the system's Volume Shadow Copies (This is a modified version) | [Based on WiredPulse](https://github.com/WiredPulse/Invoke-HiveNightmare) 
 |**Start-Webserver.ps1**|Starts powershell webserver| [MScholtese](https://github.com/MScholtes/WebServer)
+| **BetterXencrypt.ps1**|A better version of Xencrypt.Xencrypt it self is a Powershell runtime crypter designed to evade AVs.|[GetRektBoy724](https://github.com/GetRektBoy724/BetterXencrypt)
 |**Test-AzureADUserExistence.ps1**|Check if an account exists in Azure AD for specified email addresses | [it-koehler](https://blog.it-koehler.com/en/Archive/3320)
 
