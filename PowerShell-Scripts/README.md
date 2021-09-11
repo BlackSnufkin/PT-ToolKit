@@ -11,6 +11,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Add-RemoteRegBackdoor.ps1**|Implements a new remote registry backdoor that allows for the remote retrieval ofa system's machine account hash | [HarmJ0y](https://github.com/HarmJ0y/DAMP)
 | **BlueKeepScan.ps1** | Scan if the target computer is vulnerable to the BlueKeep exploit (CVE-2019-0708)| [Source_WAS_vletoux](https://github.com/vletoux/pingcastle)
 | **Dump_Lsass_v1-2.ps1** | Dump lsass process | Mine =) |
+|**FilelessUACBypass.ps1**|The purpose of this script is to aggregate many popular UAC bypass methods into one file. All current tools do a mediocre job at bypassing uAC. This is because many UAC Bypass methods require hijacking DLLs and using common "elevator" dlls as their hijack method. The aim of this script is to aggregate all fileless bypass methods wrapped into one PowerShell script. |[RhinoSecurityLabs](https://github.com/RhinoSecurityLabs/Aggressor-Scripts/blob/master/UACBypass/modules/FilelessUACBypass.ps1) 
 | **Find-LOLBAS.ps1** | Enumerating living off the land binaries and scripts on a system |[NotoriousRebel](https://github.com/NotoriousRebel/Find-LOLBAS)
 | **Find-PotentiallyCrackableAccounts.ps1** | Retreive information about user accounts associated with SPN | [cyberark](https://github.com/cyberark/RiskySPN)
 | **Get-AzureDomainInfo.ps1** | PowerShell functions for enumerating information from AzureAD domains | [NetSPI](https://github.com/NetSPI/MicroBurst)
