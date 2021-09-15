@@ -29,6 +29,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Invoke-BooMiniDump.ps1**|Create a memory dump of a process using Boolang | [itm4n](https://github.com/itm4n/Pentest-Tools/tree/master/04_windows)
 |**Invoke-CheckForAzureAD.ps1**|check if given domain has AzureAD | Mine =)
 |**Invoke-InternalMonologue.ps1**|Retrieves NTLMv1 challenge-response for all available users | [eladshamir](https://github.com/eladshamir/Internal-Monologue)
+|**Invoke-Mimikatz.ps1**|Updated Version of Invoke-Mimikatz with the latest release of Mimikatz|[samratashok](https://github.com/samratashok/nishang/blob/master/Gather/Invoke-Mimikatz.ps1)
 |**Invoke-Phant0m.ps1**|This script walks thread stacks of Event Log Service process (spesific svchost.exe) and identify Event Log Threads to kill Event Log Service Threads | [hlldze](https://github.com/hlldz/Phant0m)
 |**Invoke-Portscan.ps1**|Does a simple port scan using regular sockets, based (pretty) loosely on nmap| [webstersprodigy](https://github.com/webstersprodigy/PowerSploit/blob/Portscan/Recon/Invoke-Portscan.ps1)
 |**Invoke-PowerSAMHashes.ps1**| | [EmpireProject](https://github.com/EmpireProject/Empire/blob/master/data/module_source/credentials/Invoke-PowerDump.ps1)
