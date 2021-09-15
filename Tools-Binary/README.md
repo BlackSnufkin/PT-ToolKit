@@ -2,7 +2,7 @@
 Some tools i found on gituhb and compiled them 
 most of theme are for windows but i'll add tools for linux too
 
-| Tool Name| Description | Source |
+| Tool Name| Description | Credit & Source |
 | --------------- | --------------- | --------------- |
 | **ADCollector** | ADCollector is a lightweight tool that enumerates the Active Directory environment to identify possible attack vectors. It will give you a basic understanding of the configuration/deployment of the environment as a starting point.|[dev-2null](https://github.com/dev-2null/ADCollector)
 | Ghost-In-The-Logs |This tool allows you to evade sysmon and windows event logging, my blog post about it can be found [here](https://blog.dylan.codes/evading-sysmon-and-windows-event-logging/)| [bats3c](https://github.com/bats3c/Ghost-In-The-Logs)
@@ -18,6 +18,7 @@ most of theme are for windows but i'll add tools for linux too
 |**MagnusKatz**| Research project for understanding how Mimikatz work and being better at C | [magnusstubman](https://github.com/magnusstubman/MagnusKatz)
 |**PingCastle** |Ping Castle is a tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework. It does not aim at a perfect evaluation but rather as an efficiency compromise.|[vletoux](https://github.com/vletoux/pingcastle)
 |**PowerShdll** |Run PowerShell with rundll32. Bypass software restrictions.|[p3nt4](https://github.com/p3nt4/PowerShdll)
+|**SharpKatz**|Porting of mimikatz sekurlsa::logonpasswords, sekurlsa::ekeys and lsadump::dcsync commands |[b4rtik](https://github.com/b4rtik/SharpKatz)
 |**SharpRDPHijack** |Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|[bohops](https://github.com/bohops/SharpRDPHijack)
 |**SharpShares** | Multithreaded C# .NET Assembly to enumerate accessible network shares in a domain | [mitchmoser](https://github.com/mitchmoser/SharpShares)
 |**macro_pack** |macro_pack is a tool used to automatize obfuscation and generation of retro formats such as MS Office documents or VBS like format. Now it also handles various shortcuts formats.<br> This tool can be used for redteaming, pentests, demos, and social engineering assessments. macro_pack will simplify antimalware solutions bypass and automatize the process from vb source to final Office document or other payload type.|[sevagas](https://github.com/sevagas/macro_pack)

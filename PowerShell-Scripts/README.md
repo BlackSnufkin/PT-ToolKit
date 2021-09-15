@@ -4,7 +4,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 
 
 
-| Script| Description | Source |
+| Script| Description | Credit & Source |
 | --------------- | --------------- | --------------- |
 | **ADModuleImport.ps1** |  Import Powershell Active directory Module on any machine  | [S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Creds/blob/master/PowershellScripts/ADModuleImport.ps1) | 
 | **AMSIbypass.ps1** | AMSI Bypass to run malicious tools| [S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell) |
@@ -35,6 +35,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Invoke-PowerSAMHashes.ps1**| | [EmpireProject](https://github.com/EmpireProject/Empire/blob/master/data/module_source/credentials/Invoke-PowerDump.ps1)
 |**Invoke-PsExec.ps1**|A rough port of Metasploit's psexec functionality | [S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts)
 |**Invoke-SharpEncrypt.ps1**|AES Encrypt and GZip CSharp Files | [S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Invoke-SharpLoader)
+|**Invoke-SharpKatz.ps1**|Powershell Script that loads the binary of **SharpKatz** into memory | Mine =)
 |**Invoke-SharpLoader.ps1**|Loads AES Encrypted compressed CSharp Files from a remote Webserver | [S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Invoke-SharpLoader)
 |**Invoke-SysPSexec.ps1**|Open CMD as system with psexec| Mine =)
 |**Invoke-WmiCommand.ps1**|Executes a PowerShell ScriptBlock on a target computer using WMI as a pure C2 channel. | [S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts)
