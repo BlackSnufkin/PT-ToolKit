@@ -20,6 +20,7 @@ most of theme are for windows but i'll add tools for linux too
 |**PingCastle** | Ping Castle is a tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework. It does not aim at a perfect evaluation but rather as an efficiency compromise.|[vletoux](https://github.com/vletoux/pingcastle)
 |**PowerShdll** | Run PowerShell with rundll32. Bypass software restrictions.|[p3nt4](https://github.com/p3nt4/PowerShdll)
 |**SharpKatz**| Porting of mimikatz sekurlsa::logonpasswords, sekurlsa::ekeys and lsadump::dcsync commands |[b4rtik](https://github.com/b4rtik/SharpKatz)
+|**SharpNoPSExec**| SharpNoPSExec will perform the lateralmovement without touching disk and without creating a new service to avoid detection |[juliourena](https://github.com/juliourena/SharpNoPSExec)
 |**SharpRDPHijack** | Sharp RDP Hijack is a proof-of-concept .NET/C# Remote Desktop Protocol (RDP) session hijack utility for disconnected sessions|[bohops](https://github.com/bohops/SharpRDPHijack)
 |**SharoSecDump**| .Net port of the remote SAM + LSA Secrets dumping functionality of impacket's secretsdump.py | [G0ldenGunSec](https://github.com/G0ldenGunSec/SharpSecDump)
 |**SharpShares** | Multithreaded C# .NET Assembly to enumerate accessible network shares in a domain | [mitchmoser](https://github.com/mitchmoser/SharpShares)
