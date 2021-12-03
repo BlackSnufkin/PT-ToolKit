@@ -9,8 +9,8 @@ Most of the Tools and Script are aimed to Active-Directory environment and windo
 - [Windows-Binary](Windows-Binary/#README.md)
 ---
 
-| Some exploits aimed CVE that I found on github and compiled them <br>
-- Exploits source and discreption 
+> Some exploits aimed CVE that I found on github and compiled them <br>
+> - Exploits source and discreption 
 ---
 ## PowerShell Script:
 - Scripts that i found online most of them are from github and some of them i wrote my own <br>
