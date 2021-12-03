@@ -15,8 +15,8 @@ Most of the Tools and Script are aimed to Active-Directory environment and windo
 ---
 ## PowerShell Script:
 > Scripts that i found online most of them are from github and some of them i wrote my own <br>
-- They are very useful during  Penetration-Testing or Red Team engagement use them wisely
-- Scripts source and discreption
+> - They are very useful during  Penetration-Testing or Red Team engagement use them wisely
+> - Scripts source and discreption
 
 ---
 ## Tools-Binary
