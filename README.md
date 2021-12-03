@@ -9,14 +9,15 @@ Most of the Tools and Script are aimed to Active-Directory environment and windo
 - [Windows-Binary](Windows-Binary/#README.md)
 ---
 
+## Exploits: 
 > Some exploits aimed CVE that I found on github and compiled them <br>
-> - Exploits source and discreption 
+> all exploits has a source and discreption 
 ---
 ## PowerShell Script:
-- Scripts that i found online most of them are from github and some of them i wrote my own <br>
-- They are very useful during  PT use them wisely
+> Scripts that i found online most of them are from github and some of them i wrote my own <br>
+- They are very useful during  Penetration-Testing or Red Team engagement use them wisely
 - Scripts source and discreption
-- **Before activating them during a Penetration Test, try them first in a controlled virtual environment** 
+
 ---
 ## Tools-Binary
 - Tools that I found on github most of them are written in C#
