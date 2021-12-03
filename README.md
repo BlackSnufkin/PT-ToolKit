@@ -3,7 +3,7 @@ Exploits Scripts and other tools that are useful during Penetration-Testing or R
 Most of the Tools and Script are aimed to Active-Directory environment and windows platfform 
 
 
-## Table of Contentss
+## Table of Contents
 - [Exploits](Exploits/#README.md)
 - [PowerShell-Scripts](PowerShell-Scripts/#README.md)
 - [Windows-Binary](Windows-Binary/#README.md)
