@@ -110,7 +110,7 @@ Mimikatz Style Tools
 |Tool Name|Description|Credit & Source|
 |-----|-----------|----|
 |**mimikatz**|A little tool to play with Windows security + [Mimikatz log parser](https://github.com/chernodv/JSMimiLogParser), written in JS, hosted in a browser (Works Offline)|[gentilkiwi](https://github.com/gentilkiwi/mimikatz)
-|**BetterSafetyKatz**|Flangvik|[](https://github.com/Flangvik/BetterSafetyKatz)
+|**BetterSafetyKatz**|Fork of SafetyKatz that dynamically fetches the latest pre-compiled release of Mimikatz directly from gentilkiwi GitHub repo, runtime patches signatures and uses SharpSploit DInvoke to PE-Load into memory.|[Flangvik](https://github.com/Flangvik/BetterSafetyKatz)
 |**MagnusKatz**| Research project for understanding how Mimikatz work and being better at C | [magnusstubman](https://github.com/magnusstubman/MagnusKatz)
 |**SafetyKatz**|SafetyKatz is a combination of slightly modified version of @gentilkiwi's Mimikatz project and @subTee's .NET PE Loader|[GhostPack](https://github.com/GhostPack/SafetyKatz)
 |**SharpKatz**| Porting of mimikatz sekurlsa::logonpasswords, sekurlsa::ekeys and lsadump::dcsync commands |[b4rtik](https://github.com/b4rtik/SharpKatz)
