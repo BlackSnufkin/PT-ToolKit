@@ -101,7 +101,8 @@ Some tools i found on github and compiled them
 ## Credential_Dumping
 
 |Tool Name|Description|Credit & Source|
-|-----|-----------|----|
+|-----|-----------|----
+|**NanoDump**|Dump LSASS like you mean it|[helpsystems](https://github.com/helpsystems/nanodump)
 |**outflanknl-Dumpert**|LSASS memory dumper using direct system calls and API unhooking.|[outflanknl](https://github.com/outflanknl/Dumpert)
 |**PPLdump**| This tool implements a __userland__ exploit that was initially discussed by James Forshaw (a.k.a. [@tiraniddo](https://twitter.com/tiraniddo)) - in this [blog post](https://googleprojectzero.blogspot.com/2018/08/windows-exploitation-tricks-exploiting.html) - for __dumping the memory of any PPL__ as an administrator. I wrote two blog posts about this tool. The first part is about Protected Processes concepts while the second one dicusses the bypass technique itself.<br> - __Blog post part #1__: [Do You Really Know About LSA Protection (RunAsPPL)?](https://itm4n.github.io/lsass-runasppl/) <br>- __Blog post part #2__: [Bypassing LSA Protection in Userland](https://blog.scrt.ch/2021/04/22/bypassing-lsa-protection-in-userland/) | [itm4n](https://github.com/itm4n/PPLdump)
 |**ATPMiniDump**|Evading WinDefender ATP credential-theft|[b4rtik](https://github.com/b4rtik/ATPMiniDump)
@@ -110,9 +111,8 @@ Some tools i found on github and compiled them
 |**lsass-dumper**|Dump lsass.exe generating a file with the hostname and date in txt format using C++.|[ricardojoserf](https://github.com/ricardojoserf/lsass-dumper)
 |**LsassSilentProcessExit** | New method of causing WerFault.exe to dump lsass.exe process memory to disk for credentials extraction via silent process exit mechanism without crasing lsass.|[deepinstinct](https://github.com/deepinstinct/LsassSilentProcessExit)
 |**LsassUnhooker**|Little program written in C# to bypass EDR hooks and dump the content of the lsass process|[roberreigada](https://github.com/roberreigada/LsassUnhooker)
-|**nanodump**|Dump LSASS like you mean it|[helpsystems](https://github.com/helpsystems/nanodump)
 |**SharoSecDump**| .Net port of the remote SAM + LSA Secrets dumping functionality of impacket's secretsdump.py | [G0ldenGunSec](https://github.com/G0ldenGunSec/SharpSecDump)
-
+|**SharpHandler**|The tool is now live, but still in beta, I would not recommend using this in opsec heavy engagements for now :P you'll look like a fool if this tool flunks and you burn your opsec ;)|[jfmaes](https://github.com/jfmaes/SharpHandler)
 
 ### Katz-Family
 Mimikatz Style Tools
