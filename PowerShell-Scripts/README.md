@@ -135,7 +135,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 
 | Script| Description | Credit & Source |
 | --------------- | --------------- | --------------- |
-|**Inveigh**|Powershell IPv4/IPv6 machine-in-the-middle tool for penetration testers|[Kevin-Roberts.NET IPv4/IPv6 machine-in-the-middle tool for penetration testerson](https://github.com/Kevin-Robertson/Inveigh)
+|**Inveigh**|Powershell IPv4/IPv6 machine-in-the-middle tool for penetration testers|[Kevin-Robertson](https://github.com/Kevin-Robertson/Inveigh)
 |**PowerSharpPack**|Many usefull offensive CSharp Projects wraped into Powershell for easy usage.|[S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/PowerSharpPack)
 
 
