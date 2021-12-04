@@ -16,7 +16,6 @@ Some tools i found on github and compiled them
 ## Enumeration
 |Tool Name|Description|Credit & Source|
 |-----|-----------|----|
-|**NetworkMiner** |NetworkMiner is an open source Network Forensic Analysis Tool (NFAT) for Windows (but also works in Linux / Mac OS X / FreeBSD). NetworkMiner can be used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports etc. without putting any traffic on the network. NetworkMiner can also parse PCAP files for off-line analysis and to regenerate/reassemble transmitted files and certificates from PCAP files|[netresec](https://www.netresec.com/?page=networkminer)
 | **ADCollector** | ADCollector is a lightweight tool that enumerates the Active Directory environment to identify possible attack vectors. It will give you a basic understanding of the configuration/deployment of the environment as a starting point.|[dev-2null](https://github.com/dev-2null/ADCollector)
 |**EDRHunt** | EDRHunt scans Windows services, drivers, processes, registry for installed EDRs (Endpoint Detection And Response). | [FourCoreLabs](https://github.com/FourCoreLabs/EDRHunt)
 |**PingCastle** | Ping Castle is a tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework. It does not aim at a perfect evaluation but rather as an efficiency compromise.|[vletoux](https://github.com/vletoux/pingcastle)
@@ -24,6 +23,14 @@ Some tools i found on github and compiled them
 |**SharpHound**| C# Data Collector for the BloodHound Project, Version 3|[BloodHoundAD](https://github.com/BloodHoundAD/SharpHound3)
 |**SharpShares** | Multithreaded C# .NET Assembly to enumerate accessible network shares in a domain | [mitchmoser](https://github.com/mitchmoser/SharpShares)
 |**SharpShares2** | Enumerate all network shares in the current domain. Also, can resolve names to IP addresses.| [djhohnstein](https://github.com/djhohnstein/SharpShares)
+
+---
+
+## Network
+|Tool Name|Description|Credit & Source|
+|-----|-----------|----|
+|**NetworkMiner** |NetworkMiner is an open source Network Forensic Analysis Tool (NFAT) for Windows (but also works in Linux / Mac OS X / FreeBSD). NetworkMiner can be used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports etc. without putting any traffic on the network. NetworkMiner can also parse PCAP files for off-line analysis and to regenerate/reassemble transmitted files and certificates from PCAP files|[netresec](https://www.netresec.com/?page=networkminer)
+|**BruteShark**|BruteShark is a Network Forensic Analysis Tool (NFAT) that performs deep processing and inspection of network traffic (mainly PCAP files, but it also capable of directly live capturing from a network interface). It includes: password extracting, building a network map, reconstruct TCP sessions, extract hashes of encrypted passwords and even convert them to a Hashcat format in order to perform an offline Brute Force attack.|[odedshimon](https://github.com/odedshimon/BruteShark)
 
 ---
 
