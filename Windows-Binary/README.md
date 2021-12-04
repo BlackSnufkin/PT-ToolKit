@@ -23,6 +23,7 @@ Some tools i found on github and compiled them
 |**SharpEDRChecker** | New and improved C# Implementation of Invoke-EDRChecker. Checks running processes, process metadata, Dlls loaded into your current process and each DLLs metadata, common install directories, installed services and each service binaries metadata, installed drivers and each drivers metadata, all for the presence of known defensive products such as AV's, EDR's and logging tools | [PwnDexter](https://github.com/PwnDexter/SharpEDRChecker)
 |**SharpHound**| C# Data Collector for the BloodHound Project, Version 3|[BloodHoundAD](https://github.com/BloodHoundAD/SharpHound3)
 |**SharpShares** | Multithreaded C# .NET Assembly to enumerate accessible network shares in a domain | [mitchmoser](https://github.com/mitchmoser/SharpShares)
+|**SharpShares2** | Enumerate all network shares in the current domain. Also, can resolve names to IP addresses.| [djhohnstein](https://github.com/djhohnstein/SharpShares)
 
 ---
 
