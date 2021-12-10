@@ -35,7 +35,7 @@ Usage of theese Scripts/Executables for attacking targets without prior mutual c
 
 ---
 
-> **Note: Before activating any of the tools or scripts them during a Penetration-Testing or Red Team engagement, try them first in a controlled virtual environment** 
+> **Note: Before activating any of the tools or scripts in production environment try them first in a controlled virtual environment** 
 
 ---
 ## TODO
