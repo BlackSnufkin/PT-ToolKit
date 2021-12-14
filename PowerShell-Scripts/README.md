@@ -22,6 +22,7 @@ PowerShell Scripts from various sources for Penetration-Testing and Red-Team eng
 |**Invoke-Portscan**|Does a simple port scan using regular sockets, based (pretty) loosely on nmap| [webstersprodigy](https://github.com/webstersprodigy/PowerSploit/blob/Portscan/Recon/Invoke-Portscan.ps1)
 |**MailSniper**|MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.). It can be used as a non-administrative user to search their own email, or by an administrator to search the mailboxes of every user in a domain.|[dafthack](https://github.com/dafthack/MailSniper)
 |**MS17-010_Scanner**|Scan if the target computer is vulnerable to the EthernalBlue exploit (MS17-010) | [Source_WAS_vletoux](https://github.com/vletoux/pingcastle)
+|**o365Recon**| retrieve information via O365 and AzureAD with a valid cred | [o365recon](https://github.com/nyxgeek/o365recon)
 |**SharpHound**|Runs the BloodHound C# Ingestor using reflection. The assembly is stored in this file.|[BloodHoundAD](https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1)
 |**Test-AzureADUserExistence**|Check if an account exists in Azure AD for specified email addresses | [it-koehler](https://blog.it-koehler.com/en/Archive/3320)
 
