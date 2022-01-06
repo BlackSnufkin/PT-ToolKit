@@ -81,6 +81,7 @@ Some tools i found on github and compiled them
 |-----|-----------|----|
 |**donut**|Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters|[TheWover](https://github.com/TheWover/donut)
 |**MacroPhishing** |Word resources for phishing with macros. Includes "Click Enable Content" bait and decoy document deployment. The bait was created by me, but inspired by cerber ransomware document samples.|[TheKevinWang](https://github.com/TheKevinWang/MacroPhishing)
+|**mortar** | red teaming evasion technique to defeat and divert detection and prevention of security products | [0xsp-SRD](https://github.com/0xsp-SRD/mortar)
 |**ThreatCheck**|Identifies the bytes that Microsoft Defender / AMSI Consumer flags on.|[rasta-mouse](https://github.com/rasta-mouse/ThreatCheck)
 |**DefenderCheck**|Identifies the bytes that Microsoft Defender flags on.|[matterpreter](https://github.com/matterpreter/DefenderCheck)
 |**macro_pack** |macro_pack is a tool used to automatize obfuscation and generation of retro formats such as MS Office documents or VBS like format. Now it also handles various shortcuts formats.<br> This tool can be used for redteaming, pentests, demos, and social engineering assessments. macro_pack will simplify antimalware solutions bypass and automatize the process from vb source to final Office document or other payload type.|[sevagas](https://github.com/sevagas/macro_pack)
