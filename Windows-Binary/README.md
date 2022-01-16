@@ -93,6 +93,7 @@ Some tools i found on github and compiled them
 |Tool Name|Description|Credit & Source|
 |-----|-----------|----|
 |**PR0CESS**|some gadgets about windows process and ready to use :)|[aaaddress1](https://github.com/aaaddress1/PR0CESS)
+|**transacted_hollowing**| Transacted Hollowing - a PE injection technique, hybrid between ProcessHollowing and ProcessDoppelgänging | [hasherezade](https://github.com/hasherezade/transacted_hollowing) 
 |**RunPE-In-Memory**|Run a Exe File (PE Module) in memory (like an Application Loader)|[aaaddress1](https://github.com/aaaddress1/RunPE-In-Memory)
 |**wowInjector**|PoC: Exploit 32-bit Thread Snapshot of WOW64 to Take Over $RIP & Inject & Bypass Antivirus HIPS (HITB 2021)|[aaaddress1](https://github.com/aaaddress1/wowInjector)
 |**RunPE**|C# Reflective loader for unmanaged binaries.|[nettitude](https://github.com/nettitude/RunPE)
