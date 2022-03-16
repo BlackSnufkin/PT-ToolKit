@@ -70,6 +70,7 @@ Some tools i found on github and compiled them
 |**unDefender**|Killing your preferred antimalware by abusing native symbolic links and NT paths.|[APTortellini](https://github.com/APTortellini/unDefender)
 |**nopowershell**|PowerShell rebuilt in C# for Red Teaming purposes|[bitsadmin](https://github.com/bitsadmin/nopowershell)
 |**PowerShdll** | Run PowerShell with rundll32. Bypass software restrictions.|[p3nt4](https://github.com/p3nt4/PowerShdll)
+|**SandBoxDefender** | Sandboxing Defender (and probably other AV/EDRs) using Security Token manipulation.If you do use any of the code in these repositories keep it legal! | [plackyhacker](https://github.com/plackyhacker/SandboxDefender)
 
 ---
 
