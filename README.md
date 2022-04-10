@@ -38,7 +38,6 @@ Usage of theese Scripts/Executables for attacking targets without prior mutual c
 > **Note: Before activating any of the tools or scripts in production environment try them first in a controlled virtual environment** 
 ---
 
----
 ## TODO
 - [ ] Add More Exploits, Scripts and Tools and test them on my Virtual Lab
 - [ ] Create Timeline for Exploits, Scripts and Tools Updates
