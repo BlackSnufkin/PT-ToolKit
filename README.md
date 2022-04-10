@@ -36,7 +36,11 @@ Usage of theese Scripts/Executables for attacking targets without prior mutual c
 ---
 
 > **Note: Before activating any of the tools or scripts in production environment try them first in a controlled virtual environment** 
+---
+## Stargazers over time
 
+[![Stargazers over time](https://starchart.cc/BlackSnufkin/PT-ToolKit.svg)](https://starchart.cc/BlackSnufkin/PT-ToolKit)
+---
 ---
 ## TODO
 - [ ] Add More Exploits, Scripts and Tools and test them on my Virtual Lab
